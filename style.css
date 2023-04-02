@@ -1,0 +1,115 @@
+:root {
+  --primary-color: rgb(250, 250, 162);
+  --secondary-color: #dcd2df;
+  --third-color: #8b5d99;
+}
+
+* {
+  /* border: 1px solid blue !important; */
+  color: var(--third-color);
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+.wrapper {
+  background-color: var(--secondary-color);
+  width: 650px;
+  margin: 0 auto;
+}
+
+#view-switch-container {
+  background-color: var(--primary-color);
+  margin: 15px auto;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 5px;
+}
+
+.icon {
+  height: 32px;
+  width: 32px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 796px) {
+  #view-switch-container {
+    width: 100%;
+  }
+}
+
+.bar-view-list-item {
+  display: flex;
+  justify-content: center;
+  margin: 2.5px;
+  padding-bottom: 7.5px;
+}
+
+.bar-view-list-item:first-of-type {
+  padding-top: 7.5px;
+}
+
+.bar-view-list-item,
+.bar-view-list-item:first-of-type {
+  border-top: 2.5px solid var(--primary-color);
+}
+
+.bar-view-list-item .item-title {
+  width: 50vw;
+  min-width: 350px;
+}
+
+.bar-view-list-item .btn-show-movie {
+  margin-right: 15px;
+}
+
+button.active {
+  background-color: var(--primary-color);
+}
+
+.btn-primary,
+#search-submit-button {
+  background-color: var(--primary-color);
+  border: none;
+  color: black;
+}
+
+.btn-primary:hover,
+#search-submit-button:hover {
+  background-color: var(--third-color);
+  border: none;
+  color: white;
+}
+
+.btn-add-favorite {
+  background-color: var(--primary-color);
+  border: none;
+  margin-top: auto 5px;
+}
+
+/* modal */
+.card-img-top {
+  width: 125px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.page-link {
+  background-color: transparent;
+  color: white;
+}
+
+.page-link:hover,
+.btn-add-favorite:hover {
+  background-color: var(A--third-color);
+  color: white;
+}
+
+#view-switch-container #bar-view-icon {
+  width: 36px;
+  height: 36px;
+}
